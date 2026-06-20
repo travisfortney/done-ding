@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+sound="${DONE_DING_SOUND:-/System/Library/Sounds/Pop.aiff}"
+delay="${DONE_DING_DELAY:-1.5}"
+log_file="${DONE_DING_LOG:-/tmp/done-ding.log}"
+label="${1:-task}"
+
+{
+  printf '[%s] finished: %s\n' "$(date '+%F %T')" "$label" >> "$log_file"
+  sleep "$delay"
+  /usr/bin/afplay "$sound"
+} &

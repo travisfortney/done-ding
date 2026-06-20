@@ -1,0 +1,19 @@
+name: Validate
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  shell:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v5
+
+      - name: Run syntax checks
+        run: make test

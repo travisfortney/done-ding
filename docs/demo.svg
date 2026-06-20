@@ -1,0 +1,18 @@
+<svg width="840" height="310" viewBox="0 0 840 310" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">done-ding terminal preview</title>
+  <desc id="desc">A terminal-style preview showing a long task finishing and done-ding playing a system sound.</desc>
+  <rect width="840" height="310" rx="12" fill="#0D1117"/>
+  <rect x="24" y="24" width="792" height="262" rx="10" fill="#161B22" stroke="#30363D"/>
+  <circle cx="54" cy="52" r="7" fill="#FF5F57"/>
+  <circle cx="78" cy="52" r="7" fill="#FFBD2E"/>
+  <circle cx="102" cy="52" r="7" fill="#28C840"/>
+  <text x="42" y="103" fill="#C9D1D9" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="20">
+    <tspan fill="#58A6FF">$</tspan> make test
+  </text>
+  <text x="42" y="139" fill="#8B949E" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="20">bash -n bin/done-ding</text>
+  <text x="42" y="175" fill="#8B949E" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="20">bash -n examples/long-task.sh</text>
+  <text x="42" y="224" fill="#C9D1D9" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="20">
+    <tspan fill="#58A6FF">$</tspan> done-ding "tests"
+  </text>
+  <text x="42" y="260" fill="#7EE787" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="20">finished: tests  ->  system sound</text>
+</svg>

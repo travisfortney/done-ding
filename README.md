@@ -1,0 +1,61 @@
+# done-ding
+
+[![Validate](https://github.com/travisfortney/done-ding/actions/workflows/validate.yml/badge.svg)](https://github.com/travisfortney/done-ding/actions/workflows/validate.yml)
+
+A tiny macOS helper that plays a sound when something finishes in the terminal.
+
+I use this when I want a system sound after a longer terminal task wraps up. It waits a beat, plays a small macOS system sound, and gets out of the way.
+
+![done-ding terminal preview](docs/demo.svg)
+
+## Usage
+
+Run a command, then call the chime:
+
+```bash
+long-running-command
+bin/done-ding "long-running-command"
+```
+
+Or use it from another script:
+
+```bash
+./examples/long-task.sh
+```
+
+By default it waits `1.5` seconds, logs the finished label to `/tmp/done-ding.log`, and plays the built-in macOS Pop sound.
+
+## Options
+
+Set environment variables to change the sound, delay, or log file:
+
+```bash
+export DONE_DING_SOUND="/System/Library/Sounds/Glass.aiff"
+export DONE_DING_DELAY="0.5"
+export DONE_DING_LOG="/tmp/my-done-ding.log"
+```
+
+Then run:
+
+```bash
+bin/done-ding "backup script"
+```
+
+## Install
+
+Clone the repo, then either call the script directly or symlink it somewhere in your path:
+
+```bash
+ln -s "$PWD/bin/done-ding" /usr/local/bin/done-ding
+```
+
+After that:
+
+```bash
+make test
+done-ding "tests"
+```
+
+## Notes
+
+This is intentionally small. It is a local convenience script, not a notification framework.

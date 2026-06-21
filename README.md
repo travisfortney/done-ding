@@ -33,6 +33,7 @@ Set environment variables to change the sound, delay, or log file:
 export DONE_DING_SOUND="/System/Library/Sounds/Glass.aiff"
 export DONE_DING_DELAY="0.5"
 export DONE_DING_LOG="/tmp/my-done-ding.log"
+export DONE_DING_PLAYER="/usr/bin/afplay"
 ```
 
 Then run:

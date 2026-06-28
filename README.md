@@ -6,7 +6,7 @@ A tiny macOS helper that plays a sound when something finishes in the terminal.
 
 I use this when I want a system sound after a longer terminal task wraps up. It waits a beat, plays a small macOS system sound, and gets out of the way.
 
-![done-ding terminal preview](docs/demo.svg)
+![done-ding terminal preview](docs/demo.gif)
 
 ## Usage
 

@@ -2,9 +2,9 @@
 
 [![Validate](https://github.com/travisfortney/done-ding/actions/workflows/validate.yml/badge.svg)](https://github.com/travisfortney/done-ding/actions/workflows/validate.yml)
 
-A tiny macOS helper that plays a sound when something finishes in the terminal.
+A tiny macOS terminal chime for long-running commands.
 
-I use this when I want a system sound after a longer terminal task wraps up. It waits a beat, plays a small macOS system sound, and gets out of the way.
+Run a command, call `done-ding`, and get a small system sound when the work is finished.
 
 ![done-ding terminal preview](docs/demo.gif)
 
